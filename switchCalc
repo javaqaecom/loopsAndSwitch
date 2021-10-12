@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class switchCALC {
+    public static void main(String[] args) {
+         double numb1,numb2;
+        int op;
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("please enter the first number");
+        numb1=sc1.nextDouble();
+        System.out.println("please enter the second number");
+        numb2=sc1.nextDouble();
+        System.out.println("1 for + ");
+        System.out.println("2 for - ");
+        System.out.println("3 for * ");
+        System.out.println("4 for / ");
+        op=sc1.nextInt();
+        switch (op){
+            case 1:
+                System.out.println(numb1+numb2);
+                break;
+            case 2:
+                System.out.println(numb1-numb2);
+                break;
+            case 4:
+                if (numb2!=0) {
+                    System.out.println(numb1 / numb2);
+                    break;
+                }
+                else
+                    System.out.println("you cant divide by zero");
+                break;
+            case 3:
+                System.out.println(numb1*numb2);
+                break;
+            default:
+                System.out.println("please try again ");
+        }
+
+        double d1,d2;
+        char o;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter the first number");
+        d1=scanner.nextDouble();
+        System.out.println("please enter the second number");
+        d2=scanner.nextDouble();
+        System.out.println("select operator + - * / ");
+        o=scanner.next().charAt(0);
+
+        switch (o){
+            case '+':
+                System.out.println(d1+d2);
+                break;
+            case '-':
+                System.out.println(d1-d2);
+                break;
+            case '/':
+                if (d2!=0) {
+                    System.out.println(d1 / d2);
+                    break;
+                }
+                else
+                    System.out.println("you cant divide by zero");
+                break;
+            case '*':
+                System.out.println(d1*d2);
+                break;
+            default:
+                System.out.println("please try again ");
+        }
+
+
+    }
+}

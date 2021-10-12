@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class arithmetic  {
+    public static void main(String[] args) {
+        int x;
+        String s;
+        String s1="I LOVE JAVA";
+        s="im jack and "+s1;
+
+        int y;
+        Scanner sc1=new Scanner(System.in);
+        System.out.println("please enter the first number");
+        x=sc1.nextInt();
+        System.out.println("please enter the second number");
+        y=sc1.nextInt();
+
+        System.out.println(x+y);// print the sum of the two numbers
+        System.out.println(x-y);// prints the Subtraction
+        System.out.println(x*y);// multiply the two numbers
+        System.out.println(x/y);// division of two numbers
+        int x1=27,y1=6;
+        double result = (double) x1/y1;// casting
+        System.out.println(result);
+        System.out.println(x1%y1);//prints the remainder of divsision 2 numbers
+        int counter=1;
+        System.out.println(counter);
+        counter++;//counter = counter +1
+        counter --;// counter = counter -1
+        counter += 8;//counter = counter +8
+        counter -= 8;//counter = counter -8
+        counter *= 8;//counter = counter *8
+        counter /= 8;//counter = counter /8
+        counter %= 8;//counter = counter %8
+
+        System.out.println(counter);
+
+
+
+    }
+}

@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class ifElseIfTERGOL {
+    public static void main(String[] args) {
+        int grade;
+        Scanner sc1= new Scanner(System.in);
+        System.out.println("please enter your grade :");
+        grade=sc1.nextInt();
+        if (grade>90){
+            System.out.println("GREAT!!!!!!!");
+        }
+        else {
+            if (grade >= 80 && grade <= 90) {
+                System.out.println("GOOOD JOB");
+            }
+            else {
+                if (grade >= 70 && grade < 80)
+                    System.out.println("YOU NEED TO WORK HARDER ");
+                else {
+                    System.out.println("FFFFFFFFFFFFF");
+                }
+            }
+        }
+         System.out.println("after the if");
+
+        int month;
+        sc1= new Scanner(System.in);
+        System.out.println("enter your birth  month :");
+        month=sc1.nextInt();
+        switch (month){
+            case 1:
+                System.out.println("jan");
+                break;
+            case 2:
+                System.out.println("feb");
+                break;
+            case 3:
+                System.out.println("march");
+            case 4:
+                System.out.println("april");
+                break;
+            case 5:
+                System.out.println("may");
+                break;
+            case 6:
+                System.out.println("jun");
+                break;
+            default:
+                System.out.println("out of the range");
+        }
+
+
+    }
+}

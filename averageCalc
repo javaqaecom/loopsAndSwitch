@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class avirageCalc {
+    public static void main(String[] args) {
+       int grade,sum=0;
+       double avg;
+        Scanner scanner= new Scanner(System.in);
+        for (int i=0;i<13;i++){//i++   => i=i+1
+            System.out.println("please enter the grade of the "+(i+1)+" student");
+            grade= scanner.nextInt();
+            sum=sum+grade;
+        }
+        avg= (double)sum/13;
+        System.out.println("the class average is : "+avg);
+
+       for (int i =10;i<160;i=i*2){
+            System.out.println(i);
+        }
+        System.out.println("loop is DONE");
+
+
+
+
+    }
+}

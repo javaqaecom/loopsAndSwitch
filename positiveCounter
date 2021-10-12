@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class PosNegCounter {
+    public static void main(String[] args) {
+        int input ;
+        Scanner sc1= new Scanner(System.in);
+        int posCounter=0,negCounter=0,zeroCounter=0;
+        for (int i=1;i<=10 ;i++){
+            System.out.println("please enter a number :");
+            input = sc1.nextInt();
+            if (input<0){
+                negCounter++;
+            }
+            else if (input>0){
+                posCounter++;
+
+            }
+            else zeroCounter++;
+
+
+        System.out.println("we have a "+posCounter + " posetive numbers");
+        System.out.println("we have a "+negCounter + " negative numbers");
+        System.out.println("we have a "+zeroCounter + " zeros");
+    }
+        
+        int x=1;
+        for (int i=1;i<11;i++){
+            x=x*i; // x*=i;
+        }
+        System.out.println(x);
+        System.out.println(Math.min(101,4896));// prints the min of two numbers
+    }
+}
